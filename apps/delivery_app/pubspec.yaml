@@ -1,0 +1,53 @@
+name: delivery_app
+description: "Marketplace delivery partner app for managing deliveries, assignments, and earnings."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # State Management
+  flutter_riverpod: ^2.6.1
+
+  # Networking
+  dio: ^5.7.0
+
+  # Navigation
+  go_router: ^14.8.1
+
+  # Storage
+  flutter_secure_storage: ^9.2.4
+
+  # Image Caching
+  cached_network_image: ^3.4.1
+
+  # Date Formatting
+  intl: ^0.19.0
+
+  # Shimmer Loading
+  shimmer: ^3.0.0
+
+  # Google Fonts
+  google_fonts: ^6.2.1
+
+  # Image Picker (delivery proof)
+  image_picker: ^1.1.2
+
+  # Location
+  geolocator: ^13.0.2
+  permission_handler: ^11.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true

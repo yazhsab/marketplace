@@ -1,0 +1,47 @@
+app:
+  env: development
+  port: 8080
+  name: marketplace
+
+jwt:
+  access_secret: dev-access-secret-change-in-production
+  refresh_secret: dev-refresh-secret-change-in-production
+  access_expiry: 15m
+  refresh_expiry: 168h  # 7 days
+
+db:
+  host: localhost
+  port: 5432
+  user: marketplace
+  password: marketplace_secret
+  name: marketplace
+  sslmode: disable
+
+redis:
+  host: localhost
+  port: 6379
+  password: ""
+  db: 0
+
+meili:
+  host: http://localhost:7700
+  master_key: meili_master_key_change_me
+
+minio:
+  endpoint: localhost:9000
+  access_key: minioadmin
+  secret_key: minioadmin_secret
+  bucket: marketplace
+  use_ssl: false
+
+razorpay:
+  key_id: rzp_test_xxxxxxxxxxxxx
+  key_secret: your_razorpay_secret
+
+firebase:
+  credentials_file: ./firebase-service-account.json
+
+sms:
+  provider: mock
+  api_key: ""
+  sender_id: ""

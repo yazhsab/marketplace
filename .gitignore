@@ -1,0 +1,47 @@
+# Go
+backend/tmp/
+backend/vendor/
+*.exe
+*.test
+*.out
+
+# Flutter
+**/build/
+**/.dart_tool/
+**/.packages
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/pubspec.lock
+
+# NextJS
+admin/node_modules/
+admin/.next/
+admin/out/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker volumes
+postgres_data/
+redis_data/
+meilisearch_data/
+minio_data/
+
+# Firebase
+**/firebase-service-account.json
+
+# Logs
+*.log
